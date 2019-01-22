@@ -3,19 +3,34 @@
 
 #include "pch.h"
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	cout << "	Welcome to life." << endl;
+	int iNum1 = 0, iNum2 = 0;
+	
+	cout << "	Please enter Number 1: " << endl;
+	cin >> iNum1;
+
+	cout << "	Please enter Number 2: " << endl;
+	cin >> iNum2;
+
+	cout << "	Please select Option:" << endl;
+	cout << "1. Add" << endl;
+
+	int iMenu;
+
+	switch (iMenu)
+	{
+	case 1:
+		cout << "The Total is:" << iNum1 + iNum2 << endl;
+		break;
+	default:
+		cout << "Input not recognised." << endl;
+		break;
+	}
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
